@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2 align =center>Registration Form</h2>
+    <form action="/submit" method="POST">
+    <table border = 0 align = "center" cellspacing = "5" cellpadding = "5">
+        <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="text" id="fname" name="fname" placeholder = "First Name" required></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td><input type="text" id="lname" name="lname" placeholder = "Last Name"required></td>
+        </tr>
+        <tr>
+            <td> <label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td> <label for="gender">Gender:</label></td>
+                <td><select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label for = "bDate">Birth Date</label></td>
+            <td><input type = "date" name = "bDate"></td>
+        </tr>
+        <tr>
+            <td><label for = "uDoc">Upload Document</label></td>
+            <td><input type = "file" name = "uDoc"></td>
+        </tr>
+        <tr>
+            <td><label for = "range">Age</label></td>
+            <td><input type ="range" name = "range" min = "1" max = "100"></td>
+        </tr>
+        <tr>
+            <td align = "center"> <button type="submit">Register</button></td>
+            <td><input type="button" value="Go back!" onclick="history.back()"></td>
+        </tr>
+    </table>  
+    </form>
+</body>
+</html>

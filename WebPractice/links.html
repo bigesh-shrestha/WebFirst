@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Link</title>
+    <style>
+        .link {
+            color: rgb(167, 139, 16);
+            background-color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+            }
+
+            .link:hover {
+                        color: red;
+                        text-decoration: underline;
+            }
+            .frames{
+            display: inline;
+            }
+
+    </style>
+</head>
+<body style="background-color:rgb(255, 61, 61);">
+    <a href = "registration.html" class = "link" action = "Registration">Registration Form</a>
+    <a href = "video.html" class = "link">Video Link</a>
+    <a href = "list.html" class = "link">List Displat</a>
+    <a href = "table.html" class = "link">Table Displat</a>
+    <div class = "frames">
+        <iframe src = "registration.html" style = "width : 100%; height : 100px; float: right; background-color: aqua;" name = "Registration"> </iframe>
+        <iframe src = "video.html" width = "100%" style = "height : 500px; float: left;"></iframe>
+        <iframe src = "list.html" style = "width: 50%; height : 200px; float: left;"></iframe>
+    </div>
+</body>
+</html>
